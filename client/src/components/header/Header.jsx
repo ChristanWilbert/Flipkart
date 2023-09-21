@@ -5,7 +5,7 @@ import CustomButtons from "./CustomButtons";
 
 const StyledHeader = styled(AppBar)`
   background: #2874f0;
-  height: 55px;
+  height: 54px;
 `;
 
 const Component = styled(Box)`
@@ -16,6 +16,10 @@ const Component = styled(Box)`
 const SubHeading = styled(Typography)`
   font-size: 10px;
   font-style: italic;
+`;
+
+const CustomButtonWrapper = styled(Box)`
+  margin: 0 5% 0 auto;
 `;
 
 const PlusImage = styled("img")({ width: 10, marginLeft: 4, height: 10 });
@@ -41,9 +45,9 @@ const Header = () => {
           </Box>
         </Component>
         <Search />
-        <Box>
+        <CustomButtonWrapper>
           <CustomButtons />
-        </Box>
+        </CustomButtonWrapper>
       </Toolbar>
     </StyledHeader>
   );
