@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <Component>
       {navData.map((data) => (
-        <Box padding={2} style={{ textAlign: "center" }}>
+        <Box padding={2} style={{ textAlign: "center" }} key={data.id}>
           <img src={data.url} alt="img" height={50} />
           <Typography fontSize={14}>{data.text}</Typography>
         </Box>
